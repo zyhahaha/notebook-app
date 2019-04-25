@@ -10,6 +10,30 @@
           <p>大订单</p>
           <span>刚刚</span>
         </li>
+        <li>
+          <p>大订单</p>
+          <span>刚刚</span>
+        </li>
+        <li>
+          <p>大订单</p>
+          <span>刚刚</span>
+        </li>
+        <li>
+          <p>大订单</p>
+          <span>刚刚</span>
+        </li>
+        <li>
+          <p>大订单</p>
+          <span>刚刚</span>
+        </li>
+        <li>
+          <p>大订单</p>
+          <span>刚刚</span>
+        </li>
+        <li>
+          <p>大订单</p>
+          <span>刚刚</span>
+        </li>
       </ul>
     </div>
     <div class="footer">
@@ -38,10 +62,9 @@ export default {
   background-color: #ccc;
 }
 
-.content{
-  height: 100%;
-  padding: 0.2rem;
-  padding-top: 0.8rem;
+.content {
+  min-height: 100%;
+  padding: 0.8rem 0.2rem;
   background-color: #f8f8f8;
 }
 .content .search{
@@ -52,6 +75,9 @@ export default {
   text-align: center;
   color: #ccc;
   background-color: #fff;
+}
+.content ul {
+  background-color: #f8f8f8;
 }
 .content ul li{
   height: 1rem;
