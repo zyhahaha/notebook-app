@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <div class="header">
+    <!-- <div class="header">
       <img class="menu" src="~@/assets/images/menu.png" alt="">
       <p>test</p>
     </div>
-    <!-- <div class="content">
+    <div class="content">
       <p class="search">搜索</p>
       <ul>
         <li>
@@ -36,10 +36,21 @@
           <span>刚刚</span>
         </li>
       </ul>
-    </div>
+    </div>-->
     <div class="footer">
-      <p></p>
-    </div> -->
+      <ul>
+        <li>
+          <img src="~@/assets/images/note-pre.png" alt>
+          <br />
+          <p>笔记</p>
+        </li>
+        <li>
+          <img src="~@/assets/images/note-pre.png" alt>
+          <br />
+          <p>笔记</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -66,12 +77,12 @@ export default {
   line-height: 0.6rem;
   background-color: #ccc;
 }
-.header .menu{
+.header .menu {
   width: 0.3rem;
   vertical-align: middle;
   // line-height: 0.6rem;
 }
-.header p{
+.header p {
   display: inline-block;
   margin-left: 0.5rem;
   font-size: 0.24rem;
@@ -117,6 +128,23 @@ export default {
   height: 0.6rem;
   width: 100%;
   background-color: #ccc;
+}
+.footer ul{
+  display: flex;
+}
+.footer li{
+  flex: 1;
+  height: 100%;
+  padding-top: 0.1rem;
+  // line-height: 0.6rem;
+  text-align: center;
+}
+.footer li img{
+  width: 0.2rem;
+}
+.footer li p{
+  display: inline-block;
+  font-size: 0.12rem;
 }
 </style>
 
