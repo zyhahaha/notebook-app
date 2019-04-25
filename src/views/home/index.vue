@@ -1,9 +1,10 @@
 <template>
   <div class="home">
     <div class="header">
-      <p></p>
+      <img class="menu" src="~@/assets/images/menu.png" alt="">
+      <p>test</p>
     </div>
-    <div class="content">
+    <!-- <div class="content">
       <p class="search">搜索</p>
       <ul>
         <li>
@@ -38,7 +39,7 @@
     </div>
     <div class="footer">
       <p></p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -50,24 +51,39 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.home{
+.home {
   height: 100%;
 }
+
+// ------------ header
 .header {
   width: 100%;
   height: 0.6rem;
+  padding: 0 0.2rem;
   position: fixed;
   top: 0;
   left: 0;
+  line-height: 0.6rem;
   background-color: #ccc;
 }
+.header .menu{
+  width: 0.3rem;
+  vertical-align: middle;
+  // line-height: 0.6rem;
+}
+.header p{
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.24rem;
+}
 
+// ---------- content
 .content {
   min-height: 100%;
   padding: 0.8rem 0.2rem;
   background-color: #f8f8f8;
 }
-.content .search{
+.content .search {
   height: 0.4rem;
   margin-bottom: 0.3rem;
   line-height: 0.4rem;
@@ -79,20 +95,21 @@ export default {
 .content ul {
   background-color: #f8f8f8;
 }
-.content ul li{
+.content ul li {
   height: 1rem;
   padding: 0.2rem;
   margin-bottom: 0.2rem;
   background-color: #fff;
 }
-.content ul li p{
+.content ul li p {
   margin-bottom: 0.05rem;
   font-size: 0.24rem;
 }
-.content ul li span{
+.content ul li span {
   font-size: 0.14rem;
 }
 
+// ------------ footer
 .footer {
   position: fixed;
   bottom: 0;
