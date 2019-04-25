@@ -136,11 +136,11 @@ export default {
   flex: 1;
   height: 100%;
   padding-top: 0.1rem;
-  // line-height: 0.6rem;
   text-align: center;
 }
 .footer li img{
-  width: 0.2rem;
+  width: 0.25rem;
+  margin-bottom: -0.03rem;
 }
 .footer li p{
   display: inline-block;
