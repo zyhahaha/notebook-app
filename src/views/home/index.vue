@@ -1,8 +1,9 @@
 <template>
   <div class="home">
-    <!-- <div class="header">
+    <div class="header">
       <img class="menu" src="~@/assets/images/menu.png" alt="">
       <p>test</p>
+      <img class="info" src="~@/assets/images/info.png" alt="">
     </div>
     <div class="content">
       <p class="search">搜索</p>
@@ -36,7 +37,7 @@
           <span>刚刚</span>
         </li>
       </ul>
-    </div>-->
+    </div>
     <div class="footer">
       <ul>
         <li>
@@ -86,6 +87,11 @@ export default {
   display: inline-block;
   margin-left: 0.5rem;
   font-size: 0.24rem;
+}
+.header .info{
+  float: right;
+  width: 0.3rem;
+  vertical-align: middle;
 }
 
 // ---------- content
