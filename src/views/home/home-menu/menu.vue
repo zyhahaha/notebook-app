@@ -81,7 +81,7 @@ export default {
     transform: translateX(0%);
   }
   .band_card {
-    padding: 30px 0px;
+    padding: 0.30rem 0px;
     background-color: #303fa2;
     text-align: center;
     color: #fff;
@@ -96,23 +96,23 @@ export default {
       background-color: #fff;
     }
     .nickname {
-      margin: 25rem 0rem 20rem;
-      font-size: 22rem;
+      margin: 0.25rem 0rem 0.20rem;
+      font-size: 0.22rem;
       font-weight: bold;
     }
     .summary {
-      font-size: 22rem;
+      font-size: 0.22rem;
     }
   }
   // item_wrap
   .item_wrap {
     li {
-      padding: 25rem 40rem;
-      font-size: 28rem;
-      border-bottom: 2rem solid #ccc;
+      padding: 0.25rem 0.40rem;
+      font-size: 0.28rem;
+      border-bottom: 0.02rem solid #ccc;
       img {
-        width: 48rem;
-        margin-right: 48rem;
+        width: 0.48rem;
+        margin-right: 0.48rem;
         vertical-align: middle;
       }
     }
