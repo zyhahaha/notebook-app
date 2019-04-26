@@ -1,67 +1,33 @@
 <template>
   <div class="home">
-    <div class="header">
-      <img class="menu" src="~@/assets/images/menu.png" alt="">
-      <p>test</p>
-      <img class="info" src="~@/assets/images/info.png" alt="">
-    </div>
-    <!-- <div class="content">
-      <p class="search">搜索</p>
-      <ul>
-        <li>
-          <p>大订单</p>
-          <span>刚刚</span>
-        </li>
-        <li>
-          <p>大订单</p>
-          <span>刚刚</span>
-        </li>
-        <li>
-          <p>大订单</p>
-          <span>刚刚</span>
-        </li>
-        <li>
-          <p>大订单</p>
-          <span>刚刚</span>
-        </li>
-        <li>
-          <p>大订单</p>
-          <span>刚刚</span>
-        </li>
-        <li>
-          <p>大订单</p>
-          <span>刚刚</span>
-        </li>
-        <li>
-          <p>大订单</p>
-          <span>刚刚</span>
-        </li>
-      </ul>
-    </div>
+    <home-header />
+    <home-content />
     <div class="add-note">
       <img src="~@/assets/images/add.png" alt="">
     </div>
-    <div class="footer">
-      <ul>
-        <li>
-          <img src="~@/assets/images/note-pre.png" alt>
-          <br />
-          <p>笔记</p>
-        </li>
-        <li>
-          <img src="~@/assets/images/note-pre.png" alt>
-          <br />
-          <p>笔记</p>
-        </li>
-      </ul>
-    </div> -->
+    <home-footer />
+    <!-- <home-menu /> -->
   </div>
 </template>
 
 <script>
+import homeHeader from './home-header/header.vue';
+import homeFooter from './home-footer/footer.vue';
+import homeMenu from './home-menu/menu.vue';
+import homeContent from './home-content/content.vue';
 export default {
   name: "home",
-  components: {}
+  components: {
+    homeHeader,
+    homeFooter,
+    homeMenu,
+    homeContent
+  },
+  data: () => {
+    return {
+      isShowMenu: false
+    }
+  }
 };
 </script>
 
@@ -69,67 +35,6 @@ export default {
 .home {
   height: 100%;
 }
-
-// ------------ header
-.header {
-  width: 100%;
-  height: 0.6rem;
-  padding: 0 0.2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  line-height: 0.6rem;
-  background-color: #ccc;
-}
-.header .menu {
-  height: 0.2rem;
-  vertical-align: middle;
-  // line-height: 0.6rem;
-}
-.header p {
-  display: inline-block;
-  margin-left: 0.5rem;
-  font-size: 0.24rem;
-}
-.header .info{
-  float: right;
-  height: 0.2rem;
-  padding-top: 0.1rem;
-  vertical-align: middle;
-}
-
-// ---------- content
-.content {
-  min-height: 100%;
-  padding: 0.8rem 0.2rem;
-  background-color: #f8f8f8;
-}
-.content .search {
-  height: 0.4rem;
-  margin-bottom: 0.3rem;
-  line-height: 0.4rem;
-  border-radius: 0.05rem;
-  text-align: center;
-  color: #ccc;
-  background-color: #fff;
-}
-.content ul {
-  background-color: #f8f8f8;
-}
-.content ul li {
-  height: 1rem;
-  padding: 0.2rem;
-  margin-bottom: 0.2rem;
-  background-color: #fff;
-}
-.content ul li p {
-  margin-bottom: 0.05rem;
-  font-size: 0.24rem;
-}
-.content ul li span {
-  font-size: 0.14rem;
-}
-
 // -------------- add-note
 .add-note {
   width: 0.5rem;
@@ -150,31 +55,5 @@ export default {
   margin: auto;
 }
 
-// ------------ footer
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 0.6rem;
-  width: 100%;
-  background-color: #ccc;
-}
-.footer ul{
-  display: flex;
-}
-.footer li{
-  flex: 1;
-  height: 100%;
-  padding-top: 0.1rem;
-  text-align: center;
-}
-.footer li img{
-  width: 0.25rem;
-  margin-bottom: -0.03rem;
-}
-.footer li p{
-  display: inline-block;
-  font-size: 0.12rem;
-}
 </style>
 
