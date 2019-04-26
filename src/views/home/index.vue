@@ -5,7 +5,7 @@
       <p>test</p>
       <img class="info" src="~@/assets/images/info.png" alt="">
     </div>
-    <div class="content">
+    <!-- <div class="content">
       <p class="search">搜索</p>
       <ul>
         <li>
@@ -41,7 +41,7 @@
     <div class="add-note">
       <img src="~@/assets/images/add.png" alt="">
     </div>
-    <!-- <div class="footer">
+    <div class="footer">
       <ul>
         <li>
           <img src="~@/assets/images/note-pre.png" alt>
@@ -94,6 +94,7 @@ export default {
 .header .info{
   float: right;
   width: 0.3rem;
+  padding-top: 0.1rem;
   vertical-align: middle;
 }
 
