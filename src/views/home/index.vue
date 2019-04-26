@@ -38,7 +38,10 @@
         </li>
       </ul>
     </div>
-    <div class="footer">
+    <div class="add-note">
+      <img src="~@/assets/images/add.png" alt="">
+    </div>
+    <!-- <div class="footer">
       <ul>
         <li>
           <img src="~@/assets/images/note-pre.png" alt>
@@ -51,7 +54,7 @@
           <p>笔记</p>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -124,6 +127,26 @@ export default {
 }
 .content ul li span {
   font-size: 0.14rem;
+}
+
+// -------------- add-note
+.add-note {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: fixed;
+  bottom: 0.8rem;
+  right: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+.add-note img{
+  width: 0.25rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 // ------------ footer
