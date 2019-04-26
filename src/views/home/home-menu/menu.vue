@@ -37,37 +37,86 @@ export default {
   components: {},
   data: () => {
     return {
-      isShowMenu: false
+      isShowMenu: true
     };
   }
 };
 </script>
 
 <style lang="less" scoped>
-.footer {
-  position: fixed;
-  bottom: 0;
+.menuWrap {
+  position: absolute;
   left: 0;
-  height: 0.6rem;
+  top: 0;
   width: 100%;
-  background-color: #ccc;
-}
-.footer ul {
-  display: flex;
-}
-.footer li {
-  flex: 1;
   height: 100%;
-  padding-top: 0.1rem;
-  text-align: center;
+  z-index: -100;
+  &.showMenuWrap {
+    z-index: 100;
+  }
 }
-.footer li img {
-  width: 0.25rem;
-  margin-bottom: -0.03rem;
+
+.menu-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(125, 125, 125, 0.5);
+  display: none;
+  z-index: -1;
+  &.show {
+    display: block;
+  }
 }
-.footer li p {
-  display: inline-block;
-  font-size: 0.12rem;
+.menu {
+  transform: translateX(-130%);
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  will-change: transform;
+
+  width: 75%;
+  height: 100%;
+  background-color: #fff;
+  &.showMenu {
+    transform: translateX(0%);
+  }
+  .band_card {
+    padding: 30px 0px;
+    background-color: #303fa2;
+    text-align: center;
+    color: #fff;
+    p {
+      // display: inline-block;
+    }
+    .avatar_wrap {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 1rem;
+      background-color: #fff;
+    }
+    .nickname {
+      margin: 25rem 0rem 20rem;
+      font-size: 22rem;
+      font-weight: bold;
+    }
+    .summary {
+      font-size: 22rem;
+    }
+  }
+  // item_wrap
+  .item_wrap {
+    li {
+      padding: 25rem 40rem;
+      font-size: 28rem;
+      border-bottom: 2rem solid #ccc;
+      img {
+        width: 48rem;
+        margin-right: 48rem;
+        vertical-align: middle;
+      }
+    }
+  }
 }
 </style>
 

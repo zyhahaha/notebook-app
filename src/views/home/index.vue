@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <home-header />
+    <!-- <home-header />
     <home-content />
     <div class="add-note">
       <img src="~@/assets/images/add.png" alt="">
     </div>
-    <home-footer />
-    <!-- <home-menu /> -->
+    <home-footer /> -->
+    <home-menu />
   </div>
 </template>
 
