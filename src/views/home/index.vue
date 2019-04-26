@@ -82,7 +82,7 @@ export default {
   background-color: #ccc;
 }
 .header .menu {
-  width: 0.3rem;
+  height: 0.2rem;
   vertical-align: middle;
   // line-height: 0.6rem;
 }
@@ -93,7 +93,7 @@ export default {
 }
 .header .info{
   float: right;
-  width: 0.3rem;
+  height: 0.2rem;
   padding-top: 0.1rem;
   vertical-align: middle;
 }
