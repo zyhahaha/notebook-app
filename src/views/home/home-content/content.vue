@@ -2,46 +2,34 @@
   <div class="content">
     <p class="search">搜索</p>
     <ul>
-      <li>
-        <p>大订单</p>
-        <span>刚刚</span>
-      </li>
-      <li>
-        <p>大订单</p>
-        <span>刚刚</span>
-      </li>
-      <li>
-        <p>大订单</p>
-        <span>刚刚</span>
-      </li>
-      <li>
-        <p>大订单</p>
-        <span>刚刚</span>
-      </li>
-      <li>
-        <p>大订单</p>
-        <span>刚刚</span>
-      </li>
-      <li>
-        <p>大订单</p>
-        <span>刚刚</span>
-      </li>
-      <li>
-        <p>大订单</p>
-        <span>刚刚</span>
+      <li v-for="(note, index) in noteList" :key="index">
+        <p>{{note.content}}</p>
+        <span>{{note.tim}}</span>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: "homeContent",
   components: {},
   data: () => {
     return {
-      isShowMenu: false
+      isShowMenu: false,
+      noteList: []
     };
+  },
+  created(){
+    axios.get('http://localhost:8088/note/add', {params: {content: 'testtest'}}).then(res => {
+      console.log(res.data);
+      // this.noteList = res.data;
+    })
+    axios.get('http://localhost:8088/note/query', {}).then(res => {
+      console.log(res.data);
+      this.noteList = res.data;
+    })
   }
 };
 </script>
