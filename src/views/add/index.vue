@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     save(){
-      axios.post('/api/note/add', {content: this.content}).then(res => {
+      axios.post('/api/note/modify', {content: this.content, id: 3}).then(res => {
         console.log(res.data);
         // this.noteList = res.data;
       })
