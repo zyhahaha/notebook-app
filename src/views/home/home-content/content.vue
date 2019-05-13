@@ -2,7 +2,7 @@
   <div class="content">
     <p class="search">搜索</p>
     <ul>
-      <li v-for="(note, index) in noteList" :key="index">
+      <li @click="$router.push(`/add/${note.id}`)" v-for="(note, index) in noteList" :key="index">
         <p>{{note.content}}</p>
         <span>{{note.tim}}</span>
       </li>

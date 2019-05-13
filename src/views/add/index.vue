@@ -13,17 +13,33 @@ export default {
   components: {
     addHeader
   },
-  data: () => {
+  data(){
     return {
+      id: this.$route.params.id,
       isShowMenu: false
     }
   },
+  mounted(){
+    // alert(this.id)
+    // alert(this.$route.params.id)
+  },
   methods: {
     save(){
-      axios.post('/api/note/modify', {content: this.content, id: 3}).then(res => {
-        console.log(res.data);
-        // this.noteList = res.data;
-      })
+      alert(this.id)
+      if (!this.id) {
+        axios.post('/api/note/add', {content: this.content}).then(res => {
+          console.log(res.data);
+          alert('添加成功');
+          this.$router.replace('/');
+        })
+      } else {
+        axios.post('/api/note/modify', {content: this.content, id: this.id}).then(res => {
+          console.log(res.data);
+          alert('添加成功');
+          this.$router.replace('/');
+        })
+      }
+      
     }
   }
 };

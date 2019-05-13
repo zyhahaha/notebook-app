@@ -2,7 +2,7 @@
   <div class="home">
     <home-header />
     <home-content />
-    <div class="add-note">
+    <div class="add-note" @click="$router.push('add')">
       <img src="~@/assets/images/add.png" alt="">
     </div>
     <home-footer />
