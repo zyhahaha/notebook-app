@@ -2,18 +2,18 @@
   <div class="content">
     <p class="search">搜索</p>
     <ul>
-      <li @click="$router.push(`/add/${note.id}`)" v-for="(note, index) in noteList" :key="index">
+      <li @touchstart.prevent="touchStart(note.id)" @touchmove.prevent="touchmoveHander" @touchend.prevent="touchEnd(this, note.id)" v-for="(note, index) in noteList" :key="index">
         <p>{{note.content}}</p>
         <span>{{note.tim}}</span>
       </li>
     </ul>
-    <toast :msg="'test'" />
+    <!-- <toast :msg="'test'" /> -->
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-import toast from '@/components/toast.vue';
+// import toast from '@/components/toast.vue';
 export default {
   name: "homeContent",
   components: {},
@@ -26,17 +26,26 @@ export default {
     };
   },
   created(){
-    //axios.get('http://106.13.134.182:8088/note/add', {params: {content: 'testtest'}}).then(res => {
-      //console.log(res.data);
-      // this.noteList = res.data;
-    //})
     axios.get('/api/note/query', {}).then(res => {
       console.log(res.data);
       this.noteList = res.data;
     })
   },
   methods: {
-    
+    touchStart(id){
+      this.timer = setTimeout(() => {
+        confirm('test');
+      },500);
+    },
+    touchmoveHander(){
+      clearTimeout(this.timer);
+      this.timer=null;
+    },
+    touchEnd(id){
+      if (!this.timer) return false;
+      clearTimeout(this.timer);
+      this.$router.push(`/add/${id}`);
+    }
   }
 };
 </script>
