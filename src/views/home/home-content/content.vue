@@ -7,18 +7,22 @@
         <span>{{note.tim}}</span>
       </li>
     </ul>
+    <toast :msg="'test'" />
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import toast from '@/components/toast.vue';
 export default {
   name: "homeContent",
   components: {},
   data: () => {
     return {
       isShowMenu: false,
-      noteList: []
+      noteList: [{id: 1234, content: 1234, tim: 1234}],
+      startTime: 0,
+      timer: null
     };
   },
   created(){
@@ -30,6 +34,9 @@ export default {
       console.log(res.data);
       this.noteList = res.data;
     })
+  },
+  methods: {
+    
   }
 };
 </script>
