@@ -26,7 +26,7 @@ export default {
       //console.log(res.data);
       // this.noteList = res.data;
     //})
-    axios.get('http://106.13.134.182:8088/note/query', {}).then(res => {
+    axios.get('/api/note/query', {}).then(res => {
       console.log(res.data);
       this.noteList = res.data;
     })
