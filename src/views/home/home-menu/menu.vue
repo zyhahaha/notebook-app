@@ -37,7 +37,7 @@ export default {
   components: {},
   data: () => {
     return {
-      isShowMenu: false
+      isShowMenu: true
     };
   }
 };
@@ -81,7 +81,7 @@ export default {
     transform: translateX(0%);
   }
   .band_card {
-    padding: 0.30rem 0px;
+    padding: 0.15rem 0px;
     background-color: #303fa2;
     text-align: center;
     color: #fff;
@@ -90,29 +90,29 @@ export default {
     }
     .avatar_wrap {
       display: inline-block;
-      width: 1rem;
-      height: 1rem;
-      border-radius: 1rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 0.5rem;
       background-color: #fff;
     }
     .nickname {
-      margin: 0.25rem 0rem 0.20rem;
-      font-size: 0.22rem;
+      margin: 0.12rem 0rem 0.10rem;
+      font-size: 0.11rem;
       font-weight: bold;
     }
     .summary {
-      font-size: 0.22rem;
+      font-size: 0.11rem;
     }
   }
   // item_wrap
   .item_wrap {
     li {
-      padding: 0.25rem 0.40rem;
-      font-size: 0.28rem;
-      border-bottom: 0.02rem solid #ccc;
+      padding: 0.12rem 0.20rem;
+      font-size: 0.14rem;
+      border-bottom: 0.01rem solid #ccc;
       img {
-        width: 0.48rem;
-        margin-right: 0.48rem;
+        width: 0.24rem;
+        margin-right: 0.24rem;
         vertical-align: middle;
       }
     }
