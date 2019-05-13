@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <home-header />
-    <home-content />
+    <!-- <home-content />
     <div class="add-note" @click="$router.push('add')">
       <img src="~@/assets/images/add.png" alt="">
     </div>
     <home-footer />
-    <home-menu />
+    <home-menu /> -->
   </div>
 </template>
 

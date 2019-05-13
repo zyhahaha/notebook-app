@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <img class="back" src="~@/assets/images/menu.png" alt>
-    <p @click="save">添加笔记</p>
+    <p @click="save"></p>
     <img class="info" src="~@/assets/images/menu.png" alt>
   </div>
 </template>
