@@ -24,7 +24,7 @@
       </div>
     </div>
     <div
-      onClick="{this.props.changeMenuStateClose}"
+      @click="changeMenuStateClose"
       class="menu-drawer-overlay"
       :class="{'show': isShowMenu}"
     ></div>
@@ -39,6 +39,11 @@ export default {
     return {
       isShowMenu: true
     };
+  },
+  mathods: {
+    changeMenuStateClose(){
+      
+    }
   }
 };
 </script>
