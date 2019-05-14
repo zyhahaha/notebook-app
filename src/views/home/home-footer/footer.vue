@@ -6,7 +6,7 @@
         <br>
         <p>笔记</p>
       </li>
-      <li>
+      <li @click="$emit('changeMenuStateOpen')">
         <img src="~@/assets/images/note-pre.png" alt>
         <br>
         <p>菜单</p>

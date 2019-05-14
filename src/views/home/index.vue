@@ -5,8 +5,8 @@
     <div class="add-note" @click="$router.push('add')">
       <img src="~@/assets/images/add.png" alt="">
     </div>
-    <home-footer />
-    <home-menu />
+    <home-footer @changeMenuStateOpen="isShowMenu = true;" />
+    <home-menu :isShowMenu="isShowMenu" @changeMenuStateClose="isShowMenu = false" />
   </div>
 </template>
 
@@ -26,6 +26,13 @@ export default {
   data: () => {
     return {
       isShowMenu: false
+    }
+  },
+  mathods: {
+    changeMenuStateOpen(){
+
+    },
+    changeMenuStateClose(){
     }
   }
 };

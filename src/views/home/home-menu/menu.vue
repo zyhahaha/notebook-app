@@ -24,7 +24,7 @@
       </div>
     </div>
     <div
-      @click="changeMenuStateClose"
+      @click="$emit('changeMenuStateClose')"
       class="menu-drawer-overlay"
       :class="{'show': isShowMenu}"
     ></div>
@@ -35,14 +35,19 @@
 export default {
   name: "homeMenu",
   components: {},
-  data: () => {
+  props: {
+    isShowMenu: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data(){
     return {
-      isShowMenu: fase
     };
   },
   mathods: {
     changeMenuStateClose(){
-      
+      // this.$emit('changeMenuStateClose');
     }
   }
 };
