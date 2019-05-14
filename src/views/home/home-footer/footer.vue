@@ -2,14 +2,14 @@
   <div class="footer">
     <ul>
       <li>
-        <img src="~@/assets/images/note-pre.png" alt>
+        <img src="~@/assets/images/note-pro.png" alt>
         <br>
         <p>笔记</p>
       </li>
       <li>
         <img src="~@/assets/images/note-pre.png" alt>
         <br>
-        <p>笔记</p>
+        <p>菜单</p>
       </li>
     </ul>
   </div>

@@ -54,6 +54,7 @@ export default {
 .content {
   min-height: 100%;
   padding: 0.8rem 0.2rem;
+  padding-top: 0.2rem;
   background-color: #f8f8f8;
 }
 .content .search {
