@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <img class="back" src="~@/assets/images/menu.png" alt>
+    <img class="back" src="~@/assets/images/back.png" alt>
     <p @click="save"></p>
-    <img class="info" src="~@/assets/images/menu.png" alt>
+    <img class="save" src="~@/assets/images/save.png" alt>
   </div>
 </template>
 
@@ -44,11 +44,11 @@ export default {
   margin-left: 0.5rem;
   font-size: 0.24rem;
 }
-.header .info {
+.header .save {
   float: right;
   height: 0.2rem;
-  // padding-top: 0.1rem;
-  // vertical-align: middle;
+  margin-top: 0.2rem;
+  vertical-align: middle;
 }
 </style>
 

@@ -1,8 +1,8 @@
 <template>
   <div class="header">
     <img class="menu" src="~@/assets/images/menu.png" alt>
-    <p>test</p>
-    <img class="info" src="~@/assets/images/info.png" alt>
+    <!-- <p>test</p> -->
+    <!-- <img class="info" src="~@/assets/images/info.png" alt> -->
   </div>
 </template>
 
@@ -39,11 +39,12 @@ export default {
   margin-left: 0.5rem;
   font-size: 0.24rem;
 }
-.header .info {
-  float: right;
-  height: 0.2rem;
-  padding-top: 0.1rem;
-  vertical-align: middle;
-}
+// .header .info {
+//   float: right;
+//   // height: 0.2rem;
+//   width: 0.2rem;
+//   padding-top: 0.1rem;
+//   vertical-align: middle;
+// }
 </style>
 

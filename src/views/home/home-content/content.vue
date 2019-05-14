@@ -2,7 +2,7 @@
   <div class="content">
     <p class="search">搜索</p>
     <ul>
-      <li @touchstart.prevent="touchStart(note.id)" @touchmove.prevent="touchmoveHander" @touchend.prevent="touchEnd(this, note.id)" v-for="(note, index) in noteList" :key="index">
+      <li @click="$router.push(`/add/${id}`)" v-for="(note, index) in noteList" :key="index">
         <p>{{note.content}}</p>
         <span>{{note.tim}}</span>
       </li>
@@ -32,20 +32,20 @@ export default {
     })
   },
   methods: {
-    touchStart(id){
-      this.timer = setTimeout(() => {
-        confirm('test');
-      },500);
-    },
-    touchmoveHander(){
-      clearTimeout(this.timer);
-      this.timer=null;
-    },
-    touchEnd(id){
-      if (!this.timer) return false;
-      clearTimeout(this.timer);
-      this.$router.push(`/add/${id}`);
-    }
+    // touchStart(id){
+    //   this.timer = setTimeout(() => {
+    //     confirm('test');
+    //   },500);
+    // },
+    // touchmoveHander(){
+    //   clearTimeout(this.timer);
+    //   this.timer=null;
+    // },
+    // touchEnd(id){
+    //   if (!this.timer) return false;
+    //   clearTimeout(this.timer);
+    //   this.$router.push(`/add/${id}`);
+    // }
   }
 };
 </script>

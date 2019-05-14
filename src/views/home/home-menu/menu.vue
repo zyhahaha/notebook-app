@@ -37,7 +37,7 @@ export default {
   components: {},
   data: () => {
     return {
-      isShowMenu: true
+      isShowMenu: fase
     };
   },
   mathods: {
