@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <img class="menu" src="~@/assets/images/menu.png" alt>
+    <!-- <img class="menu" src="~@/assets/images/menu.png" alt> -->
     <!-- <p>test</p> -->
     <!-- <img class="info" src="~@/assets/images/info.png" alt> -->
   </div>

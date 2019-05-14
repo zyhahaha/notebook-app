@@ -16,16 +16,16 @@ export default {
   data(){
     return {
       id: this.$route.params.id,
-      isShowMenu: false
+      content: ''
     }
   },
   mounted(){
+    this.content = this.$store.state.noteContent;
     // alert(this.id)
     // alert(this.$route.params.id)
   },
   methods: {
     save(){
-      alert(this.id)
       if (!this.id) {
         axios.post('/api/note/add', {content: this.content}).then(res => {
           console.log(res.data);

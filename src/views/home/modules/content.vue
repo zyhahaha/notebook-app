@@ -2,7 +2,7 @@
   <div class="content">
     <p class="search">搜索</p>
     <ul>
-      <li @click="$router.push(`/add/${id}`)" v-for="(note, index) in noteList" :key="index">
+      <li @click="$store.commit('addNoteContent', note.content); $router.push(`/add/${id}`)" v-for="(note, index) in noteList" :key="index">
         <p>{{note.content}}</p>
         <span>{{note.tim}}</span>
       </li>
@@ -26,6 +26,8 @@ export default {
     };
   },
   created(){
+    // this.$store.commit('addNoteContent', 'testtest')
+    // alert(this.$store.state.noteContent)
     axios.get('/api/note/query', {}).then(res => {
       console.log(res.data);
       this.noteList = res.data;

@@ -1,8 +1,7 @@
 <template>
   <div class="header">
-    <img class="back" src="~@/assets/images/back.png" alt>
-    <p @click="save"></p>
-    <img class="save" src="~@/assets/images/save.png" alt>
+    <img @click="history.back()" class="back"  src="~@/assets/images/back.png" alt>
+    <img @click="$emit('save')" class="save" src="~@/assets/images/save.png" alt>
   </div>
 </template>
 
@@ -12,12 +11,10 @@ export default {
   components: {},
   data: () => {
     return {
-      isShowMenu: false
     };
   },
   methods: {
     save(){
-      this.$emit('save');
     }
   }
 };
