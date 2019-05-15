@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <img @click="history.back()" class="back"  src="~@/assets/images/back.png" alt>
+    <img @click="back" class="back"  src="~@/assets/images/back.png" alt>
     <img @click="$emit('save')" class="save" src="~@/assets/images/save.png" alt>
   </div>
 </template>
@@ -15,6 +15,9 @@ export default {
   },
   methods: {
     save(){
+    },
+    back(){
+      history.back()
     }
   }
 };

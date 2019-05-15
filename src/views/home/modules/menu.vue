@@ -7,8 +7,8 @@
             <img src alt>
           </p>
         </a>
-        <p class="nickname">xx</p>
-        <p class="summary">xxx</p>
+        <p class="nickname">Y & M</p>
+        <p class="summary">999天99小时99分99秒</p>
       </div>
       <div class="item_wrap">
         <ul>
@@ -19,6 +19,14 @@
           <li>
             <img src="{collectImg}" alt>
             <span>我的收藏</span>
+          </li>
+          <li>
+            <img src="{collectImg}" alt>
+            <span>love</span>
+          </li>
+          <li>
+            <img src="{collectImg}" alt>
+            <span>love-air-balloon</span>
           </li>
         </ul>
       </div>
