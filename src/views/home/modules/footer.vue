@@ -34,7 +34,8 @@ export default {
   left: 0;
   height: 0.6rem;
   width: 100%;
-  background-color: #ccc;
+  background-color: #f5f5f5;
+  box-shadow: 0 -2px 6px 0 rgba(0,0,0,.1);
 }
 .footer ul {
   display: flex;
