@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.2cbf54694658fba85d2bf94bdb10e2a7.js"
+  "precache-manifest.44c7887a117bc97185cdc9af017837f8.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "notebook-app"});
