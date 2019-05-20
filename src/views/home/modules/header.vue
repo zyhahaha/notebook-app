@@ -27,7 +27,9 @@ export default {
   top: 0;
   left: 0;
   line-height: 0.6rem;
-  background-color: #ccc;
+  opacity: 0.8;
+  // background-color: #f5f5f5;
+  // box-shadow: 0 -2px 6px 0 rgba(0,0,0,.1);
 }
 .header .menu {
   height: 0.2rem;
