@@ -55,7 +55,6 @@ export default {
   },
   mathods: {
     changeMenuStateClose(){
-      // this.$emit('changeMenuStateClose');
     }
   }
 };

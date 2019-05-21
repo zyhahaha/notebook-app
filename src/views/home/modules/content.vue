@@ -7,13 +7,11 @@
         <span>{{note.tim}}</span>
       </li>
     </ul>
-    <!-- <toast :msg="'test'" /> -->
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-// import toast from '@/components/toast.vue';
 export default {
   name: "homeContent",
   components: {},
@@ -26,28 +24,12 @@ export default {
     };
   },
   created(){
-    // this.$store.commit('addNoteContent', 'testtest')
-    // alert(this.$store.state.noteContent)
     axios.get('/api/note/query', {}).then(res => {
       console.log(res.data);
       this.noteList = res.data;
     })
   },
   methods: {
-    // touchStart(id){
-    //   this.timer = setTimeout(() => {
-    //     confirm('test');
-    //   },500);
-    // },
-    // touchmoveHander(){
-    //   clearTimeout(this.timer);
-    //   this.timer=null;
-    // },
-    // touchEnd(id){
-    //   if (!this.timer) return false;
-    //   clearTimeout(this.timer);
-    //   this.$router.push(`/add/${id}`);
-    // }
   }
 };
 </script>

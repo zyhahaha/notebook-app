@@ -11,14 +11,12 @@
 </template>
 
 <script>
-import homeHeader from './modules/header.vue';
 import homeFooter from './modules/footer.vue';
 import homeMenu from './modules/menu.vue';
 import homeContent from './modules/content.vue';
 export default {
   name: "home",
   components: {
-    homeHeader,
     homeFooter,
     homeMenu,
     homeContent

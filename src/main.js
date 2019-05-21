@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker';
-import './device-init.js';
+import './toolkit/device-init.js';
 import './style/index.less';
 
 Vue.config.productionTip = false

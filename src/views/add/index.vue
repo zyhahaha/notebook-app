@@ -1,7 +1,7 @@
 <template>
   <div class="add-page">
     <add-header @save="save" />
-    <textarea name="" placeholder="test" v-model="content"></textarea>
+    <textarea name="" placeholder="input here" v-model="content"></textarea>
   </div>
 </template>
 
@@ -21,8 +21,6 @@ export default {
   },
   mounted(){
     this.content = this.$store.state.noteContent;
-    // alert(this.id)
-    // alert(this.$route.params.id)
   },
   methods: {
     save(){
